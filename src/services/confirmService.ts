@@ -5,7 +5,7 @@ export async function confirmReview(name:string , email:string){
 
 
     try {
-        const response =  await axios.post(`http://localhost:5000/api/send`, {
+        const response =  await axios.post(`https://plutoreviewback.onrender.com/api/send`, {
             name: name,
             email:email
           });

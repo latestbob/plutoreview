@@ -32,6 +32,8 @@ const Confirm = ():JSX.Element => {
         try {
             await confirmReview(name, email);
             setLoading(false);
+            setEmail("");
+            setName("");
             Swal.fire({
                 title: "Thank You!",
                 text: "Your review has been submitted successfully",
